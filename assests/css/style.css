@@ -2,7 +2,9 @@
     --primary:rgb(55, 69, 171);
     --secondary:rgb(117, 237, 179);
 }
-
+.navbar{
+    --bs-bg-opacity: .75;
+}
 .navbar .navbar-brand{ 
     font-size: 1.75rem;
     font-weight:500;
@@ -17,27 +19,4 @@ footer ion-icon{
 }
 footer p {
     font-size: 1.0rem;
-}
-
-.carousel-inner::before{
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.499);
-    z-index: 1;
-}
-
-.carousel-caption{
-    bottom: 35%;
-    z-index: 3;
-}
-
-.w-100{
-    @media (min-width: 1250px) {
-        height: 100vh;
-      }
-    
 }
