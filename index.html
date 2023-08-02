@@ -1,101 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
 
     <!-- ===== Boostrap CSS ==== -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
 
     <!-- ======== Css Files =======  -->
-    <link rel="stylesheet" href="assests/css/style.css">
-    <link rel="stylesheet" href="assests/css/home.css">
-</head>
-<body>
- <!-- ======= Navigation Bar =======    -->
- <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-    <div class="container-fluid me-3">
-      <a class="navbar-brand text-primary ms-4" href="index.html">Trave<span class="text-dark">lota</span></a>
-      <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <link rel="stylesheet" href="assests/css/style.css" />
+    <link rel="stylesheet" href="assests/css/home.css" />
+  </head>
+  <body>
+    <!-- ======= Navigation Bar =======    -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container-fluid me-3">
+        <a class="navbar-brand text-primary ms-4" href="index.html"
+          >Trave<span class="text-dark">lota</span></a
+        >
+        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button> -->
-      <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
-      <div class="" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <!-- <li class="nav-item">
+        <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
+        <div class="" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <!-- <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li> -->
+          </ul>
+          <form class="d-flex">
+            <button
+              class="btn btn-outline-secondary d-flex align-items-center"
+              type="submit"
+            >
+              <span class="d-none d-lg-inline pe-2">SignUp</span
+              ><ion-icon
+                style="font-size: 1rem"
+                name="person-add-outline"
+              ></ion-icon>
+            </button>
+            <button
+              class="btn btn-outline-primary ms-2 me-1 d-flex align-items-center"
+              type="submit"
+            >
+              <span class="d-none d-lg-inline-block pe-2">LogIn</span
+              ><ion-icon
+                style="font-size: 1.5rem"
+                name="log-in-outline"
+              ></ion-icon>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ======== Main Content ========= -->
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="assests/images/home-img1.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h1 style="font-size: 100px">
+              <b>Trave<span class="text-dark">lota</span></b>
+            </h1>
+            <h4 style="font-size: 30px">
+              <span class="text-black">Say yes</span>TO YOUR VACATION
+            </h4>
+            <p>Make your tour amazing with us</p>
+            <p>Join us and make your travel agency popular among travelers</p>
+            <button type="button" class="btn btn-primary btn-lg color-green">
+              SignUp
+            </button>
+            <p class="text-black">To signup click this button</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="assests/images/home-img2.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+           <h1 style="font-size: 100px">
+              <b>Trave<span class="text-dark">lota</span></b>
+            </h1>
+            <h4 style="font-size: 30px">
+              <span class="text-black">Say yes</span>TO YOUR VACATION
+            </h4>
+            <p>Make your tour amazing with us</p>
+            <p>Join us and make your travel agency popular among travelers</p>
+            <button type="button" class="btn btn-primary btn-lg color-green">
+              SignUp
+            </button>
+            <p class="text-black">To signup click this button</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="assests/images/home-img3.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h1 style="font-size: 100px">
+              <b>Trave<span class="text-dark">lota</span></b>
+            </h1>
+            <h4 style="font-size: 30px">
+              <span class="text-black">Say yes</span>TO YOUR VACATION
+            </h4>
+            <p>Make your tour amazing with us</p>
+            <p>Join us and make your travel agency popular among travelers</p>
+            <button type="button" class="btn btn-primary btn-lg color-green">
+              SignUp
+            </button>
+            <p class="text-black">To signup click this button</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="grid-container">
+      <div class="left-column">
+        <h2>About Us</h2>
+        <p>
+          Welcome to our Website for travel agencies and travelers! Our platform
+          is designed to revolutionize the way travel businesses and travelers
+          interact, making the entire journey from planning to booking, and even
+          post-trip experiences, seamless and enjoyable.At travelota we are
+          passionate about travel and technology. Our team of dedicated
+          professionals consists of travel enthusiasts, software developers, and
+          customer service experts. We saw a need in the travel industry for a
+          comprehensive and user-friendly system that caters to both travel
+          agencies and individual travelers.
+        </p>
+
+        <br />
+        <div class="image-container">
+        <img src="assests/images/home-1.svg" class="d-block w-100" alt="..." />
+      </div>
+
+
+        <h2>Why Choose Us</h2>
+        <p>
+          Experience: Our team consists of seasoned professionals with extensive
+          experience in the travel industry. We understand the challenges and
+          opportunities that travel agencies and travelers face, and we tailor
+          our website to address these unique needs.
+          <br />
+        </p>
+        <p>
+          Community: We foster a vibrant community of travel enthusiasts, where
+          agencies and travelers can connect, share experiences, and
+          collaborate. Our platform encourages interaction and engagement,
+          creating a sense of belonging within the travel community.
+        </p>
+      </div>
+      <div class="right-column">
+        <div class="image-container">
+        <img src="assests/images/home-2.svg" class="d-block w-100" alt="..." /></div>
+        <h2>Our Mission</h2>
+        <p>
+          Our mission is to simplify and enhance the travel experience for all
+          parties involved. For travel agencies, we aim to provide a robust,
+          efficient, and intuitive platform that streamlines operations, manages
+          customer relationships, and optimizes bookings. For travelers, we want
+          to be your ultimate travel companion, offering an easy-to-use platform
+          that empowers you to explore the world with confidence and excitement.
+        </p>
+         <div class="image-container">
+        <img src="assests/images/home-3.svg" class="d-block w-100" alt="..." /></div>
+      </div>
+    </div>
+
+    <!-- ======== Footer ======== -->
+    <footer class="py-0 px-5 text-dark">
+      <div class="row">
+        <!-- <h1>zdhfudkslfsudhli</h1> -->
+      </div>
+      <div
+        class="d-flex flex-column align-items-center flex-lg-row justify-content-lg-between py-4 my-4 border-top"
+      >
+        <p class="text-center">
+          © 2023 Travelota, Inc.
+          <span class="d-block d-md-inline">All rights reserved.</span>
+        </p>
+        <ul class="list-unstyled d-flex">
+          <li class="m-1">
+            <a class="link-dark" href="#"
+              ><ion-icon name="logo-tumblr"></ion-icon
+            ></a>
+          </li>
+          <li class="m-1">
+            <a class="link-dark" href="#"
+              ><ion-icon name="logo-instagram"></ion-icon
+            ></a>
+          </li>
+          <li class="m-1">
+            <a class="link-dark" href="#"
+              ><ion-icon name="logo-facebook"></ion-icon
+            ></a>
+          </li>
         </ul>
-        <form class="d-flex">
-          <button class="btn btn-outline-secondary d-flex align-items-center" type="submit"><Span class="d-none d-lg-inline pe-2">SignUp</Span><ion-icon style="font-size: 1.0rem;;"" name="person-add-outline"></ion-icon></button>
-          <button class="btn btn-outline-primary ms-2 me-1 d-flex align-items-center" type="submit"><Span class="d-none d-lg-inline-block pe-2">LogIn</Span><ion-icon style="font-size: 1.5rem;" name="log-in-outline"></ion-icon></button>
-        </form>
       </div>
-    </div>
-  </nav>
+    </footer>
 
-
- <!-- ======== Main Content ========= -->
- <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="assests/images/home-1.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="assests/images/home-2.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>Some representative placeholder content for the second slide.</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="assests/images/home-3.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Some representative placeholder content for the third slide.</p>
-      </div>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-
- <!-- ======== Footer ======== -->
- <footer class="py-0 px-5 text-dark">
-  <div class="row">
-    <!-- <h1>zdhfudkslfsudhli</h1> -->
-  </div>
-  <div class="d-flex flex-column align-items-center flex-lg-row justify-content-lg-between py-4 my-4 border-top">
-    <p class="text-center">© 2023 Travelota, Inc. <span class="d-block d-md-inline">All rights reserved.</span></p>
-    <ul class="list-unstyled d-flex">
-      <li class="m-1"><a class="link-dark" href="#"><ion-icon name="logo-tumblr"></ion-icon></a></li>
-      <li class="m-1"><a class="link-dark" href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
-      <li class="m-1"><a class="link-dark" href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
-    </ul>
-  </div>
-</footer>
-
-<!-- ==== Boostrap Script ==== -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-<!-- ========= Ionicons Scripts ===== -->
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
-</body>
+    <!-- ==== Boostrap Script ==== -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- ========= Ionicons Scripts ===== -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>

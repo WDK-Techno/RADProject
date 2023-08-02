@@ -20,3 +20,31 @@
       }
     
 }
+.grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr; 
+            gap: 20px; 
+            padding: 20px;
+        }
+
+        /* Style for left column */
+        .left-column {
+            background-color: #a4d4e3;
+            padding: 10px;
+        }
+
+        /* Style for right column */
+        .right-column {
+            background-color: #a4d4e3;
+        
+            padding: 10px;
+        }
+        .image-container {
+            width: 300px; 
+        }
+
+        .image-container img {
+            width: 100%; 
+            height: auto; 
+            position: center;
+        }
