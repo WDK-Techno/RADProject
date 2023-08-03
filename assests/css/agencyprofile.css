@@ -8,3 +8,8 @@
     background: rgba(0, 0, 0, 0.394);
     z-index: 1;
 }
+
+.booking-card:hover{
+    background-color: #eceef5 !important;
+    cursor: pointer;
+}
