@@ -409,7 +409,65 @@
                                         
                                         </div>
                                         <div class="modal-body">
-                                            ...
+                                            <div class="container w-100 ps-4 fw-bold" style="font-size: 1.1rem;">
+                                                <div class="row">
+                                                    <div class="col-4 text-start">Country</div>
+                                                    <div class="col ms-2 bg-light-subtle text-start text-info-emphasis">Sri Lnka</div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-4 text-start">Contact</div>
+                                                    <div class="col text-start ms-2 bg-light-subtle">07152365891</div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-4 text-start">Reserved Date</div>
+                                                    <div class="col text-start ms-2 bg-light-subtle text-danger">2023 AUG 04</div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-4 text-start my-auto">Package</div>
+                                                    <div class="col text-start ms-2 bg-light-subtle">
+                                                        <div class="d-flex justify-content-between">
+                                
+                                                            <div class="d-flex bg-warning text-danger-emphasis py-1 px-2">
+                                                                <div class="my-auto mx-0" style="font-size: 1.1rem;">5</div>
+                                                                <ion-icon class="my-auto ms-1" name="briefcase-outline" style="font-size: 1.3rem;"></ion-icon>
+                                                            </div>
+                                                            <div class="my-auto py-1 px-2 bg-secondary-subtle text-danger-emphasis">Family Hike</div>
+                                                            <div class="my-auto py-1 px-2 bg-success-subtle text-danger-emphasis">7 DAY</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-4 text-start my-auto">Travelers</div>
+                                                    <div class="col text-start ms-2 bg-light-subtle">
+                                                        <div class="d-flex text-primary py-1 px-2">
+                                                            <div class="my-auto mx-0" style="font-size: 1.1rem;">3</div>
+                                                            <ion-icon class="my-auto ms-1 text-dark-emphasis" name="people-outline" style="font-size: 1.3rem;"></ion-icon>
+                                                
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-4 text-start">Start Date</div>
+                                                    <div class="col text-start ms-2 bg-light-subtle">
+                                                        <div class="d-flex gap-2">
+                                                            <div>2023</div>
+                                                            <div class="text-bg-dark my-auto px-1" style="font-size: 0.8rem;">AUG</div>
+                                                            <div class="text-danger">27</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-4 text-start">Total Price</div>
+                                                    <div class="col d-flex text-start ms-2 bg-light-subtle">
+                                                        <div class="d-flex gap-2 text-bg-warning px-1">
+                                                            <div class="text-dark">USD</div>
+                                                            <div class=" text-danger">10</div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
                                         </div>
                                         <div class="modal-footer bg-light-subtle">
                                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -671,9 +729,11 @@
                     </div>
                     <!-- ========== onging bookings =========== -->
                     <div class="d-flex flex-column my-3 bg-secondary-subtle shadow-sm" style="height: 27%;">
-                        <div class="text-bg-dark fw-bold rounded-top-2 shadow">Ongoin Travels</div>
+                        <div class="text-bg-dark fw-bold rounded-top-2 shadow">Ongoing Travels</div>
                         <div class="container" style="height: 100%;overflow-y: scroll; font-size: 0.8rem">
-                            <div class="booking-card row d-flex fw-bold m-1 rounded-3 align-items-center bg-light">
+                            
+                            <!-- ============= Ongoing Card 1 =========== -->
+                            <div class="booking-card row d-flex fw-bold m-1 rounded-3 align-items-center bg-light" type="button" data-bs-toggle="modal" data-bs-target="#ongoing-id-1">
                                 <div class="col ">
                                     <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/avatar-5.webp"
                                         class="shadow-sm my-1 mx-auto rounded-circle" alt="avatar 1"
@@ -708,6 +768,100 @@
                                     <div class="ms-2 my-auto text-danger fw-bolder" style="font-size: 1.1rem;">27</div>
                                 </div>
                             </div>
+                            <!-- ============= ongoing card 1 model =============== -->
+                            <div class="modal fade" id="ongoing-id-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-body-secondary py-2 px-2">
+                                            <div class="d-flex flex-row w-100 justify-content-between">
+                            
+                                                <div class="ms-2 my-auto">
+                                                    <img src="assests/images/person-profile-icon2.jpg"
+                                                        class="shadow-sm my-1 mx-auto rounded-circle img" alt="avatar 1"
+                                                        style="width: 41.5px; height: 41.5px;">
+                                                </div>
+                                                <div class="ms-2 my-auto text-start d-flex flex-column justify-content-start fw-bold">
+                                                    <div>Kavindra</div>
+                                                    <div>Weerasinghe</div>
+                                                </div>
+                                                <!-- <div class="me-3 ms-auto my-auto px-3 py-1 bg-primary text-light fw-bold rounded-3 shadow-sm" style="font-size: 1.1rem;">New</div> -->
+                                                <div class="me-3 ms-auto my-auto px-3 py-1 bg-dark text-light fw-bold rounded-3 shadow-sm" style="font-size: 1.1rem;">Ongoing</div>
+                                                <!-- <div class="me-3 ms-auto my-auto px-3 py-1 bg-success text-light fw-bold rounded-3 shadow-sm" style="font-size: 1.1rem;">Completed</div> -->
+                                            </div>
+                                        
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container w-100 ps-4 fw-bold" style="font-size: 1.1rem;">
+                                                <div class="row">
+                                                    <div class="col-4 text-start">Country</div>
+                                                    <div class="col ms-2 bg-light-subtle text-start text-info-emphasis">Sri Lnka</div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-4 text-start">Contact</div>
+                                                    <div class="col text-start ms-2 bg-light-subtle">07152365891</div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-4 text-start">Reserved Date</div>
+                                                    <div class="col text-start ms-2 bg-light-subtle text-danger">2023 AUG 04</div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-4 text-start my-auto">Package</div>
+                                                    <div class="col text-start ms-2 bg-light-subtle">
+                                                        <div class="d-flex justify-content-between">
+                                
+                                                            <div class="d-flex bg-warning text-danger-emphasis py-1 px-2">
+                                                                <div class="my-auto mx-0" style="font-size: 1.1rem;">5</div>
+                                                                <ion-icon class="my-auto ms-1" name="briefcase-outline" style="font-size: 1.3rem;"></ion-icon>
+                                                            </div>
+                                                            <div class="my-auto py-1 px-2 bg-secondary-subtle text-danger-emphasis">Family Hike</div>
+                                                            <div class="my-auto py-1 px-2 bg-success-subtle text-danger-emphasis">7 DAY</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-4 text-start my-auto">Travelers</div>
+                                                    <div class="col text-start ms-2 bg-light-subtle">
+                                                        <div class="d-flex text-primary py-1 px-2">
+                                                            <div class="my-auto mx-0" style="font-size: 1.1rem;">3</div>
+                                                            <ion-icon class="my-auto ms-1 text-dark-emphasis" name="people-outline" style="font-size: 1.3rem;"></ion-icon>
+                                                
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-4 text-start">Start Date</div>
+                                                    <div class="col text-start ms-2 bg-light-subtle">
+                                                        <div class="d-flex gap-2">
+                                                            <div>2023</div>
+                                                            <div class="text-bg-dark my-auto px-1" style="font-size: 0.8rem;">AUG</div>
+                                                            <div class="text-danger">27</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-4 text-start">Total Price</div>
+                                                    <div class="col d-flex text-start ms-2 bg-light-subtle">
+                                                        <div class="d-flex gap-2 text-bg-warning px-1">
+                                                            <div class="text-dark">USD</div>
+                                                            <div class=" text-danger">10</div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer bg-light-subtle">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-danger">Reject</button>
+                                            <button type="button" class="btn btn-success">Accept</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- =========== ongoing card 2 =========== -->
                             <div class="booking-card row d-flex fw-bold m-1 rounded-3 align-items-center bg-light">
                                 <div class="col ">
                                     <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/avatar-5.webp"
@@ -924,7 +1078,8 @@
                     <div class="d-flex flex-column bg-success-subtle my-3 shadow-sm" style="height: 30%;">
                         <div class="text-bg-success fw-bold rounded-top-2 shadow">Completed</div>
                         <div class="container" style="height: 100%;overflow-y: scroll; font-size: 0.8rem">
-                            <div class="booking-card row d-flex fw-bold m-1 rounded-3 align-items-center bg-light">
+                            <!-- =========== completed card 1========== -->
+                            <div class="booking-card row d-flex fw-bold m-1 rounded-3 align-items-center bg-light"  type="button" data-bs-toggle="modal" data-bs-target="#completed-id-1">
                                 <div class="col ">
                                     <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/avatar-5.webp"
                                         class="shadow-sm my-1 mx-auto rounded-circle" alt="avatar 1"
@@ -959,6 +1114,99 @@
                                     <div class="ms-2 my-auto text-danger fw-bolder" style="font-size: 1.1rem;">27</div>
                                 </div>
                             </div>
+                            <!-- ============= Completed card 1 model =============== -->
+                            <div class="modal fade" id="completed-id-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-body-secondary py-2 px-2">
+                                            <div class="d-flex flex-row w-100 justify-content-between">
+                            
+                                                <div class="ms-2 my-auto">
+                                                    <img src="assests/images/person-profile-icon2.jpg"
+                                                        class="shadow-sm my-1 mx-auto rounded-circle img" alt="avatar 1"
+                                                        style="width: 41.5px; height: 41.5px;">
+                                                </div>
+                                                <div class="ms-2 my-auto text-start d-flex flex-column justify-content-start fw-bold">
+                                                    <div>Kavindra</div>
+                                                    <div>Weerasinghe</div>
+                                                </div>
+                                                <!-- <div class="me-3 ms-auto my-auto px-3 py-1 bg-primary text-light fw-bold rounded-3 shadow-sm" style="font-size: 1.1rem;">New</div> -->
+                                                <!-- <div class="me-3 ms-auto my-auto px-3 py-1 bg-dark text-light fw-bold rounded-3 shadow-sm" style="font-size: 1.1rem;">Ongoing</div> -->
+                                                <div class="me-3 ms-auto my-auto px-3 py-1 bg-success text-light fw-bold rounded-3 shadow-sm" style="font-size: 1.1rem;">Completed</div>
+                                            </div>
+                                        
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container w-100 ps-4 fw-bold" style="font-size: 1.1rem;">
+                                                <div class="row">
+                                                    <div class="col-4 text-start">Country</div>
+                                                    <div class="col ms-2 bg-light-subtle text-start text-info-emphasis">Sri Lnka</div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-4 text-start">Contact</div>
+                                                    <div class="col text-start ms-2 bg-light-subtle">07152365891</div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-4 text-start">Reserved Date</div>
+                                                    <div class="col text-start ms-2 bg-light-subtle text-danger">2023 AUG 04</div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-4 text-start my-auto">Package</div>
+                                                    <div class="col text-start ms-2 bg-light-subtle">
+                                                        <div class="d-flex justify-content-between">
+                                
+                                                            <div class="d-flex bg-warning text-danger-emphasis py-1 px-2">
+                                                                <div class="my-auto mx-0" style="font-size: 1.1rem;">5</div>
+                                                                <ion-icon class="my-auto ms-1" name="briefcase-outline" style="font-size: 1.3rem;"></ion-icon>
+                                                            </div>
+                                                            <div class="my-auto py-1 px-2 bg-secondary-subtle text-danger-emphasis">Family Hike</div>
+                                                            <div class="my-auto py-1 px-2 bg-success-subtle text-danger-emphasis">7 DAY</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-4 text-start my-auto">Travelers</div>
+                                                    <div class="col text-start ms-2 bg-light-subtle">
+                                                        <div class="d-flex text-primary py-1 px-2">
+                                                            <div class="my-auto mx-0" style="font-size: 1.1rem;">3</div>
+                                                            <ion-icon class="my-auto ms-1 text-dark-emphasis" name="people-outline" style="font-size: 1.3rem;"></ion-icon>
+                                                
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-4 text-start">Start Date</div>
+                                                    <div class="col text-start ms-2 bg-light-subtle">
+                                                        <div class="d-flex gap-2">
+                                                            <div>2023</div>
+                                                            <div class="text-bg-dark my-auto px-1" style="font-size: 0.8rem;">AUG</div>
+                                                            <div class="text-danger">27</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-4 text-start">Total Price</div>
+                                                    <div class="col d-flex text-start ms-2 bg-light-subtle">
+                                                        <div class="d-flex gap-2 text-bg-warning px-1">
+                                                            <div class="text-dark">USD</div>
+                                                            <div class=" text-danger">10</div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer bg-light-subtle">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-danger">Reject</button>
+                                            <button type="button" class="btn btn-success">Accept</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- =========== completed card 2 =========== -->
                             <div class="booking-card row d-flex fw-bold m-1 rounded-3 align-items-center bg-light">
                                 <div class="col ">
                                     <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/avatar-5.webp"
