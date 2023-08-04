@@ -91,6 +91,27 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img
+            src="assests/images/travel-3.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h1 style="font-size: 100px">
+              <b>Trave<span class="text-dark">lota</span></b>
+            </h1>
+            <h4 style="font-size: 30px">
+              <span class="text-black">Say yes</span>TO YOUR VACATION
+            </h4>
+            <p>Make your tour amazing with us</p>
+            <p>Join us and make your travel agency popular among travelers</p>
+            <button type="button" class="btn btn-primary btn-lg color-green">
+              SignUp
+            </button>
+            <p class="text-black">To signup click this button</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
             src="assests/images/home-img1.jpg"
             class="d-block w-100"
             alt="..."
@@ -112,28 +133,7 @@
         </div>
         <div class="carousel-item">
           <img
-            src="assests/images/home-img2.jpg"
-            class="d-block w-100"
-            alt="..."
-          />
-          <div class="carousel-caption d-none d-md-block">
-            <h1 style="font-size: 100px">
-              <b>Trave<span class="text-dark">lota</span></b>
-            </h1>
-            <h4 style="font-size: 30px">
-              <span class="text-black">Say yes</span>TO YOUR VACATION
-            </h4>
-            <p>Make your tour amazing with us</p>
-            <p>Join us and make your travel agency popular among travelers</p>
-            <button type="button" class="btn btn-primary btn-lg color-green">
-              SignUp
-            </button>
-            <p class="text-black">To signup click this button</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img
-            src="assests/images/home-img3.jpg"
+            src="assests/images/travel-2.webp"
             class="d-block w-100"
             alt="..."
           />
@@ -188,7 +188,7 @@
         </p>
 
         <br />
-        <div class="image-container ">
+        <div class="image-container">
           <img
             src="assests/images/home-1.svg"
             class="d-block w-100"
@@ -244,6 +244,60 @@
       </div>
     </div>
 
+    <!-- The four columns -->
+    <div class="row">
+      <div class="column">
+        <img
+          src="assests/images/home-1.webp"
+          alt="Nature"
+          style="width: 100%"
+          onclick="myFunction(this);"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="assests/images/home-2.webp"
+          alt="Snow"
+          style="width: 100%"
+          onclick="myFunction(this);"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="assests/images/home-3.jpg"
+          alt="Mountains"
+          style="width: 100%"
+          onclick="myFunction(this);"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="assests/images/home-4.jpg"
+          alt="Lights"
+          style="width: 100%"
+          onclick="myFunction(this);"
+        />
+      </div>
+    </div>
+
+    <div class="container">
+      <span onclick="this.parentElement.style.display='none'" class="closebtn"
+        >&times;</span
+      >
+      <img id="expandedImg" style="width: 100%" />
+      <div id="imgtext"></div>
+    </div>
+
+    <script>
+      function myFunction(imgs) {
+        var expandImg = document.getElementById("expandedImg");
+        var imgText = document.getElementById("imgtext");
+        expandImg.src = imgs.src;
+        imgText.innerHTML = imgs.alt;
+        expandImg.parentElement.style.display = "block";
+      }
+    </script>
+
     <!-- ======== Footer ======== -->
     <footer class="py-0 px-5 text-dark">
       <div class="row">
@@ -291,5 +345,8 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+
+    <!-- link js file -->
+    <script src="assests/js/home.js"></script>
   </body>
 </html>
