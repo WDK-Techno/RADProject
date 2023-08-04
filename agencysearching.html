@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!-- ===== Boostrap CSS ==== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js">   
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">   
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">      
+
+    <!-- ======== Css Files =======  -->
+    <link rel="stylesheet" href="assests/css/style.css">
+    <link rel="stylesheet" href="assests/css/agencysearching.css">
+
+    <!-- ===== Font Awesome CSS ==== -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+
+<style>
+
+
+.form{
+
+position: relative;
+}
+
+.form .fa-search{
+
+position: absolute;
+top:20px;
+left: 20px;
+color: #9ca3af;
+
+}
+
+.form span{
+
+    position: absolute;
+right: 17px;
+top: 13px;
+padding: 2px;
+border-left: 1px solid #d1d5db;
+
+}
+
+.left-pan{
+padding-left: 7px;
+}
+
+.left-pan i{
+
+padding-left: 10px;
+}
+
+.form-input{
+
+height: 55px;
+text-indent: 33px;
+border-radius: 10px;
+}
+
+.form-input:focus{
+
+box-shadow: none;
+border:none;
+}
+
+
+
+.button-group {
+  display: flex; /* Use flexbox to stack buttons vertically */
+  flex-direction: column; /* Stack buttons vertically */
+}
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+
+
+
+
+
+
+    <!-- ======= Navigation Bar =======    -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+        <div class="container-fluid me-3">
+            <a class="navbar-brand text-primary ms-4" href="index.html">Trave<span class="text-dark">lota</span></a>
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button> -->
+            <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
+            <div class="" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li> -->
+                </ul>
+                <form class="d-flex">
+                    <button class="btn btn-outline-secondary d-flex align-items-center" type="submit"><Span
+                            class="d-none d-lg-inline pe-2">SignUp</Span><ion-icon style="font-size: 1.0rem;;"" name="
+                            person-add-outline"></ion-icon></button>
+                    <button class="btn btn-outline-primary ms-2 me-1 d-flex align-items-center" type="submit"><Span
+                            class="d-none d-lg-inline-block pe-2">LogIn</Span><ion-icon style="font-size: 1.5rem;"
+                            name="log-in-outline"></ion-icon></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container py-5">
+        <!-- For Demo Purpose-->
+        <header class="text-center mb-5">
+            <div class="row height d-flex justify-contentfa-pull-left align-items-left">
+
+                <div class="col-md-6">
+  
+                  <div class="form">
+                    <i class="fa fa-search"></i>
+                    <input type="text" class="form-control form-input" placeholder="Search Agencies...">
+                    <span class="left-pan"><i class="fa fa-microphone"></i></span>
+                  </div>
+                  
+                </div>
+                
+              </div>
+        </header>
+
+
+
+        <!-- Second Row [Team]-->
+        <h2 class="font-weight-bold mb-2">Choose Your Agency</h2>
+        <p class="font-italic text-muted mb-4">caption about agenciess</p>
+
+        <div class="row pb-5 mb-4">
+            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <!-- Card-->
+                <div class="card shadow-sm border-0 rounded">
+                    <div class="card-body p-0"><img
+                            src="images/agency_images/agency1.jpg" alt=""
+                            class="w-100 card-img-top">
+                        <div class="p-4">
+                            <h5 class="mb-0">Agency01</h5>
+                            <p class="small text-muted">small-description-about-agency</p>
+                            <div class="button-group">
+                                <button class="btn btn-outline-primary">Add Review</button>
+                                <button class="btn btn-primary">Book Now</button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <!-- Card-->
+                <div class="card shadow-sm border-0 rounded">
+                    <div class="card-body p-0"><img
+                            src="images/agency_images/agency2.jpg" alt=""
+                            class="w-100 card-img-top">
+                        <div class="p-4">
+                            <h5 class="mb-0">Agency02</h5>
+                            <p class="small text-muted">small-description-about-agency</p>
+                            <div class="button-group">
+                                <button class="btn btn-outline-primary">Add Review</button>
+                                <button class="btn btn-primary">Book Now</button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <!-- Card-->
+                <div class="card shadow-sm border-0 rounded">
+                    <div class="card-body p-0"><img
+                            src="images/agency_images/agency3.jpg" alt=""
+                            class="w-100 card-img-top">
+                        <div class="p-4">
+                            <h5 class="mb-0">Agency03</h5>
+                            <p class="small text-muted">small-description-about-agency</p>
+                            <div class="button-group">
+                                <button class="btn btn-outline-primary">Add Review</button>
+                                <button class="btn btn-primary">Book Now</button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <!-- Card-->
+                <div class="card shadow-sm border-0 rounded">
+                    <div class="card-body p-0"><img
+                            src="images/agency_images/agency4.jpg" alt=""
+                            class="w-100 card-img-top">
+                        <div class="p-4">
+                            <h5 class="mb-0">Agency04</h5>
+                            <p class="small text-muted">small-description-about-agency</p>
+                            <div class="button-group">
+                                <button class="btn btn-outline-primary">Add Review</button>
+                                <button class="btn btn-primary">Book Now</button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- ======== Footer ======== -->
+    <footer class="py-0 px-5 text-dark">
+        <div class="row">
+            <!-- <h1>zdhfudkslfsudhli</h1> -->
+        </div>
+        <div class="d-flex flex-column align-items-center flex-lg-row justify-content-lg-between py-4 my-4 border-top">
+            <p class="text-center">© 2023 Travelota, Inc. <span class="d-block d-md-inline">All rights reserved.</span>
+            </p>
+            <ul class="list-unstyled d-flex">
+                <li class="m-1"><a class="link-dark" href="#"><ion-icon name="logo-tumblr"></ion-icon></a></li>
+                <li class="m-1"><a class="link-dark" href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                <li class="m-1"><a class="link-dark" href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- ==== Boostrap Script ==== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <!-- ========= Ionicons Scripts ===== -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+    <script>
+        const searchButton = document.getElementById('search-button');
+        const searchInput = document.getElementById('search-input');
+        searchButton.addEventListener('click', () => {
+            const inputValue = searchInput.value;
+            alert(inputValue);
+        });
+
+
+    </script>
+
+
+</body>
+
+</html>

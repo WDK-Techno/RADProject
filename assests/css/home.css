@@ -20,3 +20,93 @@
       }
     
 }
+.grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr; 
+            gap: 20px; 
+            padding: 20px;
+            
+        }
+
+        /* Style for left column */
+        .left-column {
+            background-color: #ffffff;
+            padding: 10px;
+            text-align: center;
+        
+            
+        }
+
+        /* Style for right column */
+        .right-column {
+            background-color: #ffffff;
+        
+            padding: 10px;
+            text-align: center;
+            align-items: center;
+        }
+        .image-container {
+            width: 300px; 
+            align-items: center;
+        }
+
+        .image-container img {
+            width: 50%; 
+            height: 50%; 
+            position: center;
+        }
+        * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  position: relative;
+  display: none;
+}
+
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}

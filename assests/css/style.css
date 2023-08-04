@@ -1,6 +1,8 @@
 :root{
-    --primary:rgb(55, 69, 171);
-    --secondary:rgb(117, 237, 179);
+    --primary1:rgb(55, 69, 171);
+    --primary2:white;
+    --secondary1:rgb(117, 237, 179);
+
 }
 .navbar{
     --bs-bg-opacity: .75;
@@ -20,3 +22,5 @@ footer ion-icon{
 footer p {
     font-size: 1.0rem;
 }
+
+
