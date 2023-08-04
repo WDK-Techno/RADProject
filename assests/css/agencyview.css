@@ -1,3 +1,24 @@
 .card-title{
   color: text-primary;
 }
+.list-group{
+ padding-left: 100px;
+}
+.card-title{
+  align-items: center;
+  
+}
+.d-grid{
+ padding-left: 80px;
+
+}
+.list-group-item{
+  color: #b30059;
+}
+.card-body{
+  background-color: #ebfaeb;
+  width: 600px;
+}
+.fs-6{
+  color: #cc0052;
+}
