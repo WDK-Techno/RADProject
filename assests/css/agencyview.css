@@ -1,4 +1,4 @@
-.card-title{
+/* .card-title{
   color: text-primary;
 }
 .list-group{
@@ -21,4 +21,16 @@
 }
 .fs-6{
   color: #cc0052;
+} */
+
+.travel-places .row{
+  margin: 8px auto !important;
+  background-color: rgb(241, 246, 193) !important;
+  font-weight: 500 !important;
+}
+.travel-places .row .col-3{
+  background-color: green !important;
+  font-weight: 600 !important;
+  color: rgb(255, 255, 255) !important;
+  text-align: center !important;
 }
