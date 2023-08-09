@@ -45,6 +45,7 @@
               person-add-outline"
               ></ion-icon>
             </button>
+
             <button
               class="btn btn-outline-primary ms-2 me-1 d-flex align-items-center"
               type="submit"
@@ -63,7 +64,7 @@
     <!-- ======== Main Content ========= -->
 
     <div class="w-100" style="height: 100vh">
-      <section class="vh-100" style="background-color: #6aabcd">
+      <section class="h-100 bg-dark">
         <div
           class="container"
           style="
@@ -96,18 +97,21 @@
                         LogIn
                       </p>
 
-                      <form class="mx-1 mx-md-4">
+                      <form
+                        class="mx-1 mx-md-4"
+                        action="loginaction.jsp"
+                        method="post"
+                      >
                         <div class="d-flex flex-row align-items-center mb-4">
                           <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
                           <div class="form-outline flex-fill mb-0">
                             <input
                               type="email"
                               id="email"
+                              name="email"
                               class="form-control"
                             />
-                            <label class="form-label" for="email"
-                              >Your Email</label
-                            >
+                            <label class="form-label" for="email"> Email</label>
                           </div>
                         </div>
 
@@ -117,6 +121,7 @@
                             <input
                               type="password"
                               id="password"
+                              name="password"
                               class="form-control"
                             />
                             <label class="form-label" for="password"
